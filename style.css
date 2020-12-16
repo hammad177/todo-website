@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(acctes/Background-image.jpg);
+    background-size: auto;
+    background-repeat: repeat;
+}
+
+.todo{
+    height: 95vh;
+    width: 130vh;
+    margin: auto;
+    border: 6px solid #005485;
+    border-radius: 10px;
+    background-color: #008da8;
+}
+
+.heading{
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.first, .second{
+    text-align: center;
+    font-family:'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+#userInput{
+    margin-left: 110px;
+    width: 500px;
+    height: 35px;
+    font-size: medium;
+    display: inline-block;
+    border: 2px solid #005485;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+#userInput:focus{
+    height: 35px;
+    outline: none;
+}
+
+#enter{
+    height: 35px;
+    color: whitesmoke;
+    border: 1px solid #2198dd;
+    background-color: #2198dd;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 100px;
+}
+
+#enter:hover ,.edit:hover,.delete:hover{
+    border: 2px solid #005485;
+    color: #2198dd;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+
+
+#list{
+    height: 380px;
+    width: 750px;
+    overflow-y: auto;
+}
+
+#list li{
+    list-style: none;
+    border: 2px solid #005485;
+    color: aliceblue;
+    height: 40px;
+    margin: 10px 0px 10px 0px;
+    padding: 10px 20px 10px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #2198dd;
+}
+
+.edit, .delete{
+    float: right;
+    margin-right: 5px;
+    color: aliceblue;
+    background-color: #2198dd;
+    padding: 2px 15px 2px 15px;
+    border: 2px solid #005485;
+    border-radius: 10px;
+}
+
+.edit:focus, .delete:focus, #enter:focus{
+    outline: none;
+}

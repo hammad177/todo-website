@@ -1,0 +1,42 @@
+<html lang="en">
+    <head>
+        <title>TODO WebPage</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+
+        <script>
+            var firebaseConfig = {
+              apiKey: "AIzaSyAnkubfKWnbs7dqcEYvvH06xQPkuCXuTus",
+              authDomain: "todo-website-9db58.firebaseapp.com",
+              databaseURL: "https://todo-website-9db58.firebaseio.com",
+              projectId: "todo-website-9db58",
+              storageBucket: "todo-website-9db58.appspot.com",
+              messagingSenderId: "235301894036",
+              appId: "1:235301894036:web:15cd1dac7c8568d0a60181",
+              measurementId: "G-3MDE72PQMT"
+            };
+            firebase.initializeApp(firebaseConfig);
+          </script>
+
+    </head>
+    <body>
+
+        <div class="todo">
+            <h1 class="heading">WORK TO-DOS</h1>
+            <p class="first">Enter text into the input field to add items to your list.</p>
+            <p class="second">Click the "X" to remove items from your list & you can also edit your items.</p>
+            
+            <div>
+                <input id="userInput" type="text" maxlength="40" placeholder="New item..."> 
+                <button id="enter" onclick="addItems()">ENTER</button>
+            </div>
+
+            <ul id="list">
+
+            </ul>
+        </div>
+    
+        <script src="todo.js"></script>
+    </body>
+</html>
